@@ -4,6 +4,7 @@ import IconTwitter from "@/components/icons/twitter";
 import IconYoutube from "@/components/icons/youtube";
 import IconGithub from "@/components/icons/github";
 import IconInstagram from "@/components/icons/instagram";
+import IconLinkedIn from "./icons/linkedin";
 
 function SocialButton({ href, children }) {
   return (
@@ -27,7 +28,9 @@ export default function Social() {
       <SocialButton href={`mailto:${META.email}`}>
         <span className="mx-2 font-medium">Email</span>
       </SocialButton>
-
+      <SocialButton href={META.social.linkedin}>
+        <IconLinkedIn />
+      </SocialButton>
       <SocialButton href={META.social.instagram}>
         <IconInstagram />
       </SocialButton>
