@@ -2,7 +2,7 @@ import { META } from "@/data/meta";
 
 export default function Head() {
   const meta = {
-    title: `${META.name} – Designer, developer, creator.`,
+    title: `${META.name} – Developer`,
     description: `${META.description}`,
     url: `${META.url}`,
   };

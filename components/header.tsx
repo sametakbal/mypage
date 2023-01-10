@@ -10,9 +10,7 @@ import Container from "./container";
 const MENU = {
   "/": "Hakkımda",
   "/videos": "Eğitimler",
-  "/photos": "Fotoğraflar",
   "/post": "Yazılar",
-  "/bookmarks": "Yer İmleri",
 };
 
 export default function Header() {

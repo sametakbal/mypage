@@ -8,7 +8,7 @@ export default function Footer() {
       <Container>
         <p>
           Bu web sitesinin kaynak kodlarına{" "}
-          <StyleLink href="https://github.com/ademilter/homepage">
+          <StyleLink href="https://github.com/sametakbal/mypage">
             Github üzerinden
           </StyleLink>{" "}
           ulaşabilirsiniz.
