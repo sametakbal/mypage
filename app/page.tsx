@@ -16,7 +16,7 @@ export default function Index() {
 
           <p className="text-xl">
             Spring Boot, Dotnet Core, React,Vue Angular, ve Flutter ile full stack uygulamalar geliştiriyorum.
-            Şu anda <StyleLink href="https://infonal.com/">Infonal</StyleLink>'da. Yazılım geliştirici olarak çalışıyorum.
+            Şu anda <StyleLink href="https://infonal.com/">Infonal</StyleLink>'da yazılım geliştirici olarak çalışıyorum.
           </p>
 
           <p className="text-xl">
