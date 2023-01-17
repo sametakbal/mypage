@@ -1,19 +1,17 @@
 import NextLink from "next/link";
 import { tr } from "date-fns/locale";
 import { compareDesc, format, parseISO } from "date-fns";
-import { allPosts, Post } from "contentlayer/generated";
+import { Post } from "contentlayer/generated";
 import Title from "@/components/title";
 import Container from "@/components/container";
+import allPosts from "@/data/posts";
 
 function getData() {
-  const posts: Post[] = allPosts.sort((a, b) => {
+  const posts: any[] = allPosts.sort((a, b) => {
     return compareDesc(new Date(a.date), new Date(b.date));
   });
 
-  return posts.map((post: Post) => {
-    const { body, type, _raw, ...rest } = post;
-    return rest;
-  });
+  return posts;
 }
 
 export default function PostsPage() {
@@ -22,7 +20,7 @@ export default function PostsPage() {
   return (
     <>
       <Container>
-        <Title>Blog yazıları ve kısa notlar</Title>
+        <Title>Medium yazıları</Title>
       </Container>
 
       <Container className="mt-20">
@@ -32,7 +30,7 @@ export default function PostsPage() {
               <article key={post._id}>
                 <header>
                   <h3 className="shine font-semibold">
-                    <NextLink href={`/post/${post.slug}`}>
+                    <NextLink href={`${post.url}`}>
                       {post.title}
                     </NextLink>
                   </h3>

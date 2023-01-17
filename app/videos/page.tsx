@@ -13,7 +13,7 @@ export default async function VideosPage() {
     <>
       <Container>
         <Title>
-          Frontend ve Tasarım alanında ürettiğim eğitim videolarının tam
+          Frontend ve Backend alanında ürettiğim eğitim videolarının tam
           listesi. Youtube üzerinden izledikten sonra buradan işaretleyebilir ve
           düzenli olarak takip edebilirsiniz.
         </Title>

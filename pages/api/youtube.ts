@@ -22,10 +22,9 @@ export default async function handler(
 
   const response = await youtube.channels.list({
     // @ts-ignore
-    id: "UC1Z-a8i2Ce4oIEMV-S3iFrg",
+    id: "UC_m9nFLfzAMEZbFtaaYp1Aw",
     part: "statistics",
   });
-
   // @ts-ignore
   const channel = response.data.items[0];
   const { subscriberCount, viewCount } = channel.statistics;
@@ -39,4 +38,5 @@ export default async function handler(
     subscriberCount,
     viewCount,
   });
+
 }

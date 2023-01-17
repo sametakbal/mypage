@@ -28,7 +28,7 @@ function MetricCard({
       )}
       <div className="shine spacing-sm mt-1 text-3xl font-semibold opacity-90">
         {prefix}
-        {Number(data).toLocaleString()}
+        {Number(data).toLocaleString()}+
       </div>
     </div>
   );
